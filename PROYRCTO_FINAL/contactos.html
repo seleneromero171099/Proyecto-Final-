@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Atención al Cliente</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2519490909.js" crossorigin="anonymous"></script>
+</head>
+<link rel="icon" href="img/LOGO3.png">
+<body>
+  <header>
+    <img src="img/LOGO3.png" alt="Logo Delicias del Cacao" class="logo" />
+    <nav>
+      <ul>
+        <li><b><i><a href="index.html">Inicio</a></i></b></li>
+        <li><b><i><a href="productos.html">Productos</a></i></b></li>
+        <li><b><i><a href="recetas.html">Recetas</a></i></b></li>
+        <li><b><i><a href="secciones.html">Sobre Nosotros</a></b></i></li>
+        <li><b><i><a href="contactos.html">Contacto</a></i></b></li>
+      </ul>
+    </nav>   
+    
+  </header>
+  <section class="hero">
+      <h1><b><i>Delicias del Cacao</i></b></h1>
+      <p class="frase">Descubre el placer del chocolatate artesanal</p>
+      <h2>Atención al Cliente</h2>
+    </section>
+    
+<main>
+  <section class="faq">
+  <h2>Preguntas Frecuentes <i class="fa-solid fa-paperclip"></i></h2>
+
+  <div class="faq-item">
+    <input type="checkbox" id="faq1" class="faq-toggle">
+    <label for="faq1" class="faq-question"><i class="fa-solid fa-plane"></i> ¿Cuánto tarda en llegar mi caja de chocolates?</label>
+    <div class="faq-answer">
+      <p>El tiempo de entrega es de 2 a 5 días hábiles, dependiendo de tu ubicación.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <input type="checkbox" id="faq2" class="faq-toggle">
+    <label for="faq2" class="faq-question"><i class="fa-regular fa-star"></i> ¿Puedo devolver mis chocolates si no estoy satisfecho?</label>
+    <div class="faq-answer">
+      <p>Sí, aceptamos devoluciones dentro de los 7 días posteriores a la entrega, siempre que el empaque esté intacto.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <input type="checkbox" id="faq3" class="faq-toggle">
+    <label for="faq3" class="faq-question"><i class="fa-solid fa-pager"></i> ¿Qué métodos de pago aceptan?</label>
+    <div class="faq-answer">
+      <p>Aceptamos tarjetas de crédito, débito, Plin, Yape y transferencias bancarias.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <input type="checkbox" id="faq4" class="faq-toggle">
+    <label for="faq4" class="faq-question"><i class="fa-solid fa-gift"></i> ¿Puedo enviar chocolates como regalo?</label>
+    <div class="faq-answer">
+      <p>¡Por supuesto! Puedes incluir un mensaje personalizado y elegir un empaque especial.</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="contacto">
+    <h3>Contáctanos</h3>
+    <form action="enviar.php" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</main>
+<!-- Mapa -->
+
+      <div class="mapa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7812.969684423203!2d-75.4784024049788!3d-11.730854403927813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910eccfb2e372eab%3A0x92b34d69bc7b01a9!2sPlazuela%20de%20Huala!5e0!3m2!1ses-419!2spe!4v1753194083215!5m2!1ses-419!2spe"
+          width="600"
+          height="450" style="border:0;"
+          allowfullscreen=""
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+      </div>
+    </section>
+  </main>
+ <footer>
+   <div class="info-contacto">
+  <p><strong> <i class="fa-solid fa-location-dot"></i> Dirección: </strong> AV. PRINCIPAL HUALÁ-JAUJA</p>
+  <p><strong> 
+<i class="fa-solid fa-phone-volume"></i> Teléfono:</strong> 987 458 674</p>
+   <p><strong><i class="fa-brands fa-facebook"></i> Facebook:</strong> <a href="https://www.facebook.com/DeciliasDelCacao" class="Deli"> Decilias Del Cacao</a></p>
+  </div>
+   <div><i class="fa-solid fa-person-dress"></i> <b><i> Autor: Selene Romero Mucha </i></b></div>
+  </footer>
+</body>
+</html>

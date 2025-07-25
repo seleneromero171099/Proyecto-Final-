@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Chocolatero</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2519490909.js" crossorigin="anonymous"></script>
+</head>
+<link rel="icon" href="img/LOGO3.png">
+<body>
+   <header>
+    <img src="img/LOGO3.png" alt="Logo Delicias del Cacao" class="logo" />
+    <nav>
+      <ul>
+        <li><b><i><a href="index.html">Inicio</a></i></b></li>
+        <li><b><i><a href="productos.html">Productos</a></i></b></li>
+        <li><b><i><a href="recetas.html">Recetas</a></i></b></li>
+        <li><b><i><a href="secciones.html">Sobre Nosotros</a></b></i></li>
+        <li><b><i><a href="contactos.html">Contacto</a></i></b></li>
+
+      </ul>
+    </nav>
+  </header>
+<main>
+    <section class="hero">
+      <h1><b><i>Delicias del Cacao</i></b></h1>
+      <p class="frase">Descubre el placer del chocolate artesanal</p>
+    </section>
+  <main id="blog">
+    <article>
+      <h2><i class="fa-brands fa-pagelines"></i> El viaje del cacao: De la selva a tu paladar</h2>
+      <p class="fecha">Publicado el 15 de julio de 2025</p>
+      <p>Conoce cómo el cacao peruano recorre el país desde Junín hasta tu tableta favorita. Un tributo a los productores que hacen del chocolate una obra de arte.</p>
+      <span class="leer-mas" onclick="toggleTexto('extra1', this)">Leer más...</span>
+      <div id="extra1" class="extra">
+        <p>Gracias a técnicas ancestrales y el cuidado artesanal, el cacao se transforma en una experiencia única que deleita todos los sentidos. Este viaje no solo es geográfico, sino también cultural y sensorial.</p>
+      </div>
+    </article>
+
+    <article>
+      <h2><i class="fa-solid fa-cookie-bite"></i> Receta: Trufas artesanales con chocolate oscuro</h2>
+      <p class="fecha">Publicado el 9 de julio de 2025</p>
+      <p>Una receta sencilla, intensa y llena de personalidad para preparar trufas caseras con cacao al 70% y un toque de café. ¡Una delicia para compartir!</p>
+      <span class="leer-mas" onclick="toggleTexto('extra2', this)">Leer más...</span>
+      <div id="extra2" class="extra">
+        <p>Solo necesitas nata, chocolate de buena calidad, café soluble y una pizca de sal. Derrite, mezcla, enfría, y forma pequeñas trufas para un toque gourmet en casa.</p>
+      </div>
+    </article>
+
+    <article>
+      <h2><i class="fa-solid fa-palette"></i> Diseño de envoltorios: El arte de regalar chocolate</h2>
+      <p class="fecha">Publicado el 1 de julio de 2025</p>
+      <p>¿Sabías que el diseño puede influir en el sabor percibido? Exploramos cómo los colores y texturas del empaque enriquecen la experiencia chocolatera.</p>
+      <span class="leer-mas" onclick="toggleTexto('extra3', this)">Leer más...</span>
+      <div id="extra3" class="extra">
+        <p>Desde papel reciclado hasta patrones florales, el envoltorio conecta emocionalmente con el consumidor. Es el primer beso antes del primer bocado.</p>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    function toggleTexto(id, elemento) {
+      var contenido = document.getElementById(id);
+      if (contenido.style.display === "none" || contenido.style.display === "") {
+        contenido.style.display = "block";
+        elemento.textContent = "Leer menos...";
+      } else {
+        contenido.style.display = "none";
+        elemento.textContent = "Leer más...";
+      }
+    }
+  </script>
+      <script>
+</script>
+
+    </article>
+  </main>
+
+   <footer>
+   <div class="info-contacto">
+  <p><strong> <i class="fa-solid fa-location-dot"></i> Dirección: </strong> AV. PRINCIPAL HUALÁ-JAUJA</p>
+  <p><strong> 
+  <i class="fa-solid fa-phone-volume"></i> Teléfono:</strong> 987 458 674</p>
+  <p><strong><i class="fa-brands fa-facebook"></i> Facebook:</strong> <a href="https://www.facebook.com/DeciliasDelCacao" class="Deli"> Decilias Del Cacao</a></p>
+  </div>
+   <div><i class="fa-solid fa-person-dress"></i> <b><i> Autor: Selene Romero Mucha </i></b></div>
+  </footer>
+</body>
+</html>
